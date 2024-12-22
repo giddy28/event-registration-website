@@ -1,0 +1,98 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer=""></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src=".images/conference-banner.jpg." alt="Conference Banner" style="width: 100%; max-height: 300px;">
+        <h1>WELCOME TO INNOVATECH COMPANY </h1>
+        <p>Connecting Innovators and sharing of ideas</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#details">Event Details</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Event Details Section -->
+    <section id="details">
+        <h2>Event Details</h2>
+        <img src="event-details.jpg" alt="Event Details" style="width: 100%; max-height: 300px;">
+        <p><strong>Date:</strong> March 15th 2025</p>
+        <p><strong>Time:</strong> 8:00 AM - 4:00 PM</p>
+        <p><strong>Venue:</strong> Innovatech Hub Conference Center</p>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers">
+        <h2>Meet Our Speakers</h2>
+        <div class="speaker">
+            <img src="speaker1.jpg" alt="Speaker 1">
+            <h3>Dr.Clara Kerubo</h3>
+            <p>Computer science expert &amp; Keynote Speaker</p>
+        </div>
+        <div class="speaker">
+            <img src="speaker2.jpg" alt="Speaker 2">
+            <h3>Jane Juma</h3>
+            <p>Software Expert</p>
+        </div>
+        <div class="speaker">
+            <img src="speaker3.jpg" alt="Speaker 3">
+            <h3>Emily Carter</h3>
+            <p>Cybersecurity Specialist</p>
+        </div>
+        
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration">
+        <h2>Register for the Event</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required="">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required="">
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Event Gallery</h2>
+        <div class="gallery">
+            <img src="gallery1.jpg" alt="Gallery Image 1" onclick="showImage(this)">
+            <img src="gallery2.jpg" alt="Gallery Image 2" onclick="showImage(this)">
+            <img src="gallery3.jpg" alt="Gallery Image 3" onclick="showImage(this)">
+            <img src="gallery4.jpg" alt="Gallery Image 4" onclick="showImage(this)">
+            <img src="gallery5.jpg" alt="Gallery Image 5" onclick="showImage(this)">
+
+        </div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">×</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="logo.jpg" alt="Company Logo" style="width: 100px;">
+        <p>© 2024 Innovatech Company. All Rights Reserved.</p>
+    </footer>
+
+
+</body></html>
